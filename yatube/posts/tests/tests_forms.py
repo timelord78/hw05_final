@@ -94,6 +94,6 @@ class PostCreateFormTests(TestCase):
             follow=True
         )
         self.assertEqual(response.status_code, 200)
-        self.assertTrue(Post.objects.filter(
-            image='posts/small.gif'
-        ).exists())
+        new_post_image = Post.objects.filter(
+            image='posts/small.gif').exists()
+        self.assertTrue(new_post_image)
