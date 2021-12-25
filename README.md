@@ -1,3 +1,34 @@
-# hw05_final
+# Yatube
+*Учебный проект по разработке веб сервиса с использованием фрэймворка Django*
+### Описание проект
+Блог "Yatube" это проект на котором пользователи могут публиковать посты, а также смотреть и комментировать чужие.
+### Возможности
+- Зарегистрировать свою учетную запись; 
+- Публиковать посты;
+- Добавлять картинки к постам; 
+- Комментировать чужие посты;
+- Подписываться/отписываться на избранных авторов;
+- Есть возможность разбиения постов по группам.
+### Технологии
+- Python 3.7
+- Django 2.2.6
+- SQLite
 
-[![CI](https://github.com/yandex-praktikum/hw05_final/actions/workflows/python-app.yml/badge.svg?branch=master)](https://github.com/yandex-praktikum/hw05_final/actions/workflows/python-app.yml)
+### Клонируйте проект 
+```
+git clone https://github.com/timelord78/hw05_final.git
+```
+### Запуск проекта
+
+- Примените миграции
+```
+python manage.py migrate
+``` 
+- Создайте суперпользователя и введите данные
+```
+python manage.py createsuperuser
+```
+- Запустите проект
+```
+python manage.py runserver
+```
